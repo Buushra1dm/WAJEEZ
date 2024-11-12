@@ -17,8 +17,6 @@ from nltk.corpus import stopwords
 from tashaphyne.stemming import ArabicLightStemmer
 import pyarabic.araby as araby
 from sklearn.feature_extraction.text import TfidfVectorizer
-import firebase_admin
-from firebase_admin import credentials, firestore, auth
 from flask import Flask, render_template, request, redirect, url_for, flash,session
 import os
 nltk.download('punkt_tab')
