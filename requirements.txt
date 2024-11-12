@@ -9,10 +9,10 @@ pandas==2.2.2
 scikit-learn==1.5.1
 scipy==1.14.0
 matplotlib==3.9.1
+matplotlib-inline==0.1.6
 Flask-Cors==4.0.1
 Flask-Login==0.6.3
 flask-ngrok==0.0.25
-Flask-SocketIO==5.3.6
 aiohttp==3.9.5
 python-json-logger==2.0.7
 eventlet==0.36.1
@@ -21,10 +21,9 @@ gevent-websocket==0.10.1
 openai==0.28.0
 json5==0.9.14
 Werkzeug==3.0.3
-joblib
+joblib==1.4.2
 torch
 seaborn
 nltk
 tashaphyne
-pyrebase
-pycrypto==2.6.1
+huggingface-hub==0.26.2
