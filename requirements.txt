@@ -27,3 +27,4 @@ seaborn
 nltk
 tashaphyne
 pyrebase
+pycrypto
