@@ -33,8 +33,8 @@ with open('svm_model.pkl', 'rb') as f:
 import nltk
 nltk.download('punkt')
 
-model = AutoModelForSeq2SeqLM.from_pretrained("AraBART_5epoch_3e5/model")
-tokenizer = AutoTokenizer.from_pretrained('AraBART_5epoch_3e5/tokenizer')
+model = AutoModelForSeq2SeqLM.from_pretrained("bushra1dajam/AraBART")
+tokenizer = AutoTokenizer.from_pretrained('bushra1dajam/AraBART')
 
 
 
