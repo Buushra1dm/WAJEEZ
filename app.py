@@ -19,7 +19,7 @@ import pyarabic.araby as araby
 from sklearn.feature_extraction.text import TfidfVectorizer
 from flask import Flask, render_template, request, redirect, url_for, flash,session
 import os
-nltk.download('punkt_tab')
+nltk.download('punkt')
 
 app = Flask(__name__)
 
@@ -29,9 +29,6 @@ with open('tfidf_vectorizer.pkl', 'rb') as f:
 
 with open('svm_model.pkl', 'rb') as f:
     model_classify = pickle.load(f)
-
-import nltk
-nltk.download('punkt')
 
 model = AutoModelForSeq2SeqLM.from_pretrained("bushra1dajam/AraBART")
 tokenizer = AutoTokenizer.from_pretrained('bushra1dajam/AraBART')
